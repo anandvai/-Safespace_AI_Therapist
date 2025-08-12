@@ -7,7 +7,8 @@ The project integrates **LLMs**, intelligent agents, and **emergency support too
 
 
 ## 📸 Screenshots
-C:\Users\priya\OneDrive\Pictures\Screenshots\Screenshot (1193).png
+<img width="1920" height="1080" alt="Screenshot (1193)" src="https://github.com/user-attachments/assets/c118f382-1b2e-40b7-a877-1b00dc91b9f4" />
+
 ---
 
 ## ✨ Features  
