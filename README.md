@@ -30,9 +30,7 @@ The project integrates **LLMs**, intelligent agents, and **emergency support too
                                           |
                                  [Twilio / Location API]
 
-
 ---
-
 ## 🗂 Development Phases  
 **Phase 1 – Frontend**  
 ✅ Streamlit interface setup  
@@ -52,6 +50,37 @@ The project integrates **LLMs**, intelligent agents, and **emergency support too
 ✅ End-to-end testing & debugging  
 
 ---
+## 🔍 How It Works  
+
+The AI Mental Health Therapist follows a simple yet powerful workflow to assist users in real time:
+
+1. **User Interaction (Frontend – Streamlit)**  
+   - The user opens the Streamlit web interface and starts a conversation.  
+   - Messages are typed into the chat box or spoken through voice input (if enabled).  
+
+2. **Request Handling (Backend – FastAPI)**  
+   - The frontend sends the user’s query to the FastAPI backend.  
+   - The backend validates the input for safety, context, and completeness.  
+
+3. **AI Processing (MedGemma + LLMs)**  
+   - The backend forwards the query to the **AI Agent**, powered by Google’s **MedGemma LLM**.  
+   - Depending on the request, additional models (Ollama, GPT-4, Claude, Groq) may be used for reasoning or empathy enhancement.  
+
+4. **Tool Activation (Agentic Workflow)**  
+   - If the AI detects a crisis or emergency:
+     - **📞 Twilio API** triggers an emergency call to a pre-defined contact or helpline.  
+     - **📍 Location Service** fetches the user’s location for emergency assistance.  
+     - **👩‍⚕️ Professional Support** information is provided.  
+
+5. **Response Delivery**  
+   - The AI generates a compassionate, context-aware response.  
+   - The backend sends the final answer back to the Streamlit frontend for display.  
+
+6. **Continuous Conversation**  
+   - The session remains active for follow-up questions, maintaining conversational context.  
+
+**In short:**  
+User → **Streamlit** → **FastAPI** → **MedGemma + Tools** → Response + Optional Emergency Support
 
 ## 🚀 Installation & Setup  
 ```bash
