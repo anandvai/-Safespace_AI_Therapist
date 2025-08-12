@@ -1,18 +1,13 @@
 # 🧠 AI Mental Health Therapist – *SafeSpace*  
-![Banner](https://via.placeholder.com/1200x300?text=AI+Mental+Health+Therapist+%7C+SafeSpace)  
-
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)  
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)  
-[![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?logo=streamlit)](https://streamlit.io/)  
-[![LangChain](https://img.shields.io/badge/LangChain-Agents-yellowgreen)](https://www.langchain.com/)  
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)  
-
 ---
 
 ## 🌟 Overview  
 An **AI-powered virtual mental health assistant** built using **Google’s MedGemma LLM** and advanced chatbot frameworks.  
 The project integrates **LLMs**, intelligent agents, and **emergency support tools** to provide safe, empathetic, and real-time mental health assistance.  
 
+
+## 📸 Screenshots
+C:\Users\priya\OneDrive\Pictures\Screenshots\Screenshot (1193).png
 ---
 
 ## ✨ Features  
@@ -29,5 +24,45 @@ The project integrates **LLMs**, intelligent agents, and **emergency support too
 ---
 
 ## 🏗 Technical Architecture  
+```plaintext
+[Frontend: Streamlit]  <--->  [Backend: FastAPI]  <--->  [AI Agent Layer: MedGemma + Tools]
+                                          |
+                                 [Twilio / Location API]
 
 
+---
+
+## 🗂 Development Phases  
+**Phase 1 – Frontend**  
+✅ Streamlit interface setup  
+✅ User queries → Backend connection  
+
+**Phase 2 – Backend**  
+✅ FastAPI API setup  
+✅ Request validation & routing  
+
+**Phase 3 – AI Agent & Tools**  
+✅ Ollama + MedGemma integration  
+✅ Twilio API for calls  
+✅ Location services  
+✅ AI Agent linked with backend  
+
+**Phase 4 – Testing**  
+✅ End-to-end testing & debugging  
+
+---
+
+## 🚀 Installation & Setup  
+```bash
+# Clone repository
+git clone https://github.com/your-username/ai-therapist.git
+cd ai-therapist
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run backend
+uvicorn main:app --reload
+
+# Run frontend
+streamlit run app.py
