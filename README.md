@@ -25,10 +25,11 @@ The project integrates **LLMs**, intelligent agents, and **emergency support too
 ---
 
 ## 🏗 Technical Architecture  
-```plaintext
+
 [Frontend: Streamlit]  <--->  [Backend: FastAPI]  <--->  [AI Agent Layer: MedGemma + Tools]
                                           |
                                  [Twilio / Location API]
+
 
 ---
 ## 🗂 Development Phases  
